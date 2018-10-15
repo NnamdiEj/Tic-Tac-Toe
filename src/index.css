@@ -1,0 +1,175 @@
+body {
+    font: 45px "Century Gothic", Futura, sans-serif;
+    margin: 10px 20px;
+}
+
+ul {
+    padding-left: 30px;
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+.board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.status {
+    margin-bottom: 10px;
+}
+
+.square {
+    background: #fff;
+    border: 1px solid #999;
+    float: left;
+    font-size: 125px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 150px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 150px;
+}
+
+.square:focus {
+    outline: none;
+}
+
+.kbd-navigation .square:focus {
+    background: #ddd;
+}
+
+.game {
+    display: flex;
+    flex-direction: row;
+}
+
+.game-info {
+    margin-left: 40px;
+}
+
+.game-button {
+    font-size: 25px;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: ghostwhite;
+    border: none;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    width: 215px;
+    height: 70px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    margin-top: 10px;
+    box-shadow: 2px 3px #999;
+}
+
+.game-button:active {
+    box-shadow: 0 0 #999;
+    transform: translateX(1px) translateY(3px);
+    transition: 0.25s;
+}
+
+.step-button{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: ghostwhite;
+    border: black;
+    border-width: 2px;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    width: 300px;
+    height: 60px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.step-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.step-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+}
+
+.step-button:hover span {
+    padding-right: 25px;
+}
+
+.step-button:hover span:after{
+    opacity: 1;
+}
+
+.introduction {
+    font-size: 60px;
+}
+
+button:focus {
+    outline:0;
+}
+
+.red {
+    color: maroon;
+}
+
+.score {
+    margin-left: 30px;
+    text-align: center;
+    width: 410px;
+}
+
+.scoreboard {
+    margin-top: 0;
+    margin-left: 30px;
+}
+
+input {
+    padding: 10px;
+    font-size: 25px;
+    width: 300px;
+    border-color: black;
+    border-width: 1px;
+    color: maroon;
+}
+
+input:hover, input:focus {
+    border-color: maroon;
+}
+
+.game-stats {
+    display: flex;
+    flex-direction: row;
+}
+
+.player-scores {
+    margin-top: 0;
+    margin-left: 30px;
+}
+
+.winner {
+    color: green;
+}
+
+.draw {
+    color: gold;
+}
+
+.green {
+    color: darkgreen;
+}
